@@ -1,2 +1,2 @@
 a="weather"
-print(a[1:4:2])
+print(a[0:3])
