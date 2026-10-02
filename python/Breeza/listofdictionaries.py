@@ -59,9 +59,12 @@ bus=[
 
 #for b in bus:
 # print(b['bus_name'])
-for b in bus:
-   print(b['distance_charge'])
+#for b in bus:
+  #  print(b['distance_charge'])
 
-    
 
+
+#for b in bus:
+    #print(b['capacity'])
+      
 
