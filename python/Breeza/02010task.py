@@ -4,6 +4,7 @@ course = input("Enter course name: ")
 fee = float(input("Enter monthly fee (INR): "))
 months = int(input("Enter number of months: "))
 discount = float(input("Enter discount (%): "))
+
 total_fee = fee * months
 discount_amount = total_fee * discount / 100
 final_amount = total_fee - discount_amount
@@ -11,7 +12,7 @@ gst = final_amount * 18 / 100
 grand_total = final_amount + gst
 
 
-
+print("done by aditya")
 print("==============================")
 print("DATAVALLEY ENROLLMENT RECIEPT ")
 print("==============================")
