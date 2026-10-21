@@ -26,14 +26,16 @@ class product():
        return(total)
     
     def apply_discount(self,total ):
-      discount_rate = 10 or 5
+      
       if total>= 5000:
-         discount_rate =  total*discount_rate/100
+         discount_rate =  10 
       elif total>=2000 :
-         discount_rate =total*discount_rate/100
+         discount_rate = 5
       else:
          print("no discount")
-      return(discount_rate) 
+      discount = total * discount_rate/100
+      return discount
+       
 product1= product(101,'wireless headphones', 2500, 20, 'electronics')
 product1.display_product()
 purchase_quantity= 4
@@ -42,11 +44,16 @@ product1.add_to_cart(purchase_quantity)
 
 total = product1.calculate_total(purchase_quantity, 2500)
 
-# print("Total amount:", total)
 discount = product1.apply_discount(total)
 
-print("Total amount:", total)
-print("Discount:", discount)
+final_amount = total - discount
+
+print("="* 20 )
+print(f"Total amount: ₹{total:.2f}")
+print(f"Discount: ₹{discount:.2f}")
+print(f"Final payable amount: ₹{final_amount:.2f}")
+print("Remaining stock:", product1.quantity)
+
 
 
 

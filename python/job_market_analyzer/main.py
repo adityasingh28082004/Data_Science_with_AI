@@ -113,6 +113,29 @@ def get_jobs_by_city_and_salary(city, salary):
                 print("Salary:", job["salary"])
                 
 
-get_jobs_by_city_and_salary("hyderabad" , 50000)      
+get_jobs_by_city_and_salary("hyderabad" , 50000) 
+def count_jobs_by_city(city) :
+    count = 0
+    for job in jobs:
+         if job["city"].strip().lower() == city.strip().lower():
+          count += 1
+    
+    print("Total jobs in", city, ":", count)
+count_jobs_by_city("hyderabad")
+def count_jobs_by_skill(skill):
+    count = 0 
+    for job in jobs:
+        if skill in job["skills"]:
+        #    if job["skills"] == skill:
+            
+            
+            count+=1
+    
+    print("Total jobs in", skill, ":", count)
+count_jobs_by_skill("Python")
+
+
+
+    
 
 

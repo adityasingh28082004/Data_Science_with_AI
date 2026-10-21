@@ -19,7 +19,7 @@ def create_orders(customer_name, restaurant_name, total_amount, **extra_details)
     print("Final amount: ₹", total_amount)
     return total_amount
 
-
+      
 create_orders(
     "Aditya",
     "Vrindavan",
